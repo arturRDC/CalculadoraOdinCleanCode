@@ -1,0 +1,22 @@
+const actions = {
+  one: (calculator) => calculator.appendDigit('1'),
+  two: (calculator) => calculator.appendDigit('2'),
+  three: (calculator) => calculator.appendDigit('3'),
+  four: (calculator) => calculator.appendDigit('4'),
+  five: (calculator) => calculator.appendDigit('5'),
+  six: (calculator) => calculator.appendDigit('6'),
+  seven: (calculator) => calculator.appendDigit('7'),
+  eight: (calculator) => calculator.appendDigit('8'),
+  nine: (calculator) => calculator.appendDigit('9'),
+  zero: (calculator) => calculator.appendDigit('0'),
+  addition: (calculator) => calculator.setOperation('add'),
+  subtraction: (calculator) => calculator.setOperation('subtract'),
+  multiplication: (calculator) => calculator.setOperation('multiply'),
+  division: (calculator) => calculator.setOperation('divide'),
+  ac: (calculator) => calculator.clear(),
+  sign: (calculator) => calculator.changeSign(),
+  percentage: (calculator) => calculator.convertToPercentage(),
+  dot: (calculator) => calculator.addDecimalPoint(),
+  equals: (calculator) => calculator.calculateResult(),
+};
+export default actions;
